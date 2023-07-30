@@ -21,4 +21,4 @@ pela Constituição Federal de 1988 e pelas leis que tratam da temática.
 
 ## Tela Inicial
 
-<img src="https://github.com/LucasEPaduam/PremioZumbi/blob/main/Imagens/telaInicial.PNG?raw=true">
+<img src="https://github.com/LucasEPaduam/PremioZumbi_React/blob/main/public/PremioZumbiReact.PNG?raw=true">
