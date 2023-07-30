@@ -1,0 +1,69 @@
+/* home section style */
+
+.home {
+    color: #fff;
+    background-image: url('../.././public/7062114.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Josefin Sans', sans-serif;
+    height: 100vh;
+
+}
+
+
+.home .carousel {
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+.home .carousel .card {
+
+    background: linear-gradient(to left, #ff9100d8, #ffc401);
+    padding: 5% 45%;
+    text-align: center;
+    transition: all 0.5s ease;
+    margin-top: 5%;
+
+}
+
+.home .carousel .card:hover {
+    background: #ff0000;
+
+}
+
+.home .carousel .card .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+
+
+
+.home .carousel .card .box img {
+    height: 300px;
+    width: 900px;
+    object-fit: cover;
+    border: 5px solid #35fd03;
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+}
+
+.home .carousel .card:hover img {
+    border-color: #fac104;
+}
+
+.home .carousel .card:hover .box {
+    transform: scale(1.04);
+}
+
+.home .carousel p a:hover {
+    color: #000000;
+    background: #ffffff
+}

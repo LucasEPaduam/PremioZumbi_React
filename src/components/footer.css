@@ -1,0 +1,22 @@
+/* footer style */
+
+footer {
+
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    background-image: linear-gradient(to right, #104B46, #ff5e00);
+    padding: 20px 23px;
+    color: #fff;
+    margin-top: 94vh;
+
+}
+
+.text a {
+    color: #35fd03;
+    text-decoration: none;
+}
+
+.text a:hover {
+    text-decoration: underline;
+}

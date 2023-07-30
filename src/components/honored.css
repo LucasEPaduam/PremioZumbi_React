@@ -1,0 +1,114 @@
+/* homenageados style */
+
+.services {
+    color: #fff;
+    background-image: linear-gradient(to top, #ff5e00, #000000);
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.services .serv-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.services .title::before {
+    background: #000000;
+    transform: translateX(-165%);
+}
+
+
+/* search homenageados style */
+
+:root {
+    --icon-color: #FFB800;
+    --icon-hover-color: #ffe600;
+    --text-color: #4C5A5B;
+    --input-color: #2e3359;
+    --autocomp-hover: #FFB800;
+    --white: #000000;
+}
+
+.search__container {
+    display: flex;
+    column-gap: 5px;
+    max-width: 450px;
+    position: relative;
+    margin-top: 5%;
+}
+
+.search__input {
+    width: 100%;
+    background-color: var(--white);
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0 1px 4px 3px rgba(0, 0, 0, 0.1);
+}
+
+#search {
+    height: 50px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    padding: 0 50px 0 20px;
+    font-size: 18px;
+    color: var(--input-color);
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search__icon {
+    background-color: var(--icon-color);
+    color: var(--white);
+    border-radius: 5px;
+    padding: 5px;
+    height: 50px;
+    width: 55px;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search__icon:hover {
+    background-color: var(--icon-hover-color);
+}
+
+.autocomplete__box {
+    opacity: 0;
+    pointer-events: none;
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.search__input.active .autocomplete__box {
+    opacity: 1;
+    pointer-events: auto;
+    padding: 10px 8px;
+}
+
+.autocomplete__box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.autocomplete__box li {
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: none;
+}
+
+.search__input.active .autocomplete__box li {
+    display: block;
+}
+
+.autocomplete__box li:hover {
+    background-color: var(--autocomp-hover);
+}

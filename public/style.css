@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+* {
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.max-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+
+
+
+
+
+/* all similar content code styles */
+
+.historia {
+    font-family: 'Josefin Sans', sans-serif;
+    background-image: linear-gradient(to left, #ff5e00, #000000);
+}
+
+
+.historia .historia-content,
+.services .serv-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+section .title-right {
+    position: relative;
+    text-align: right;
+    font-size: 40px;
+    font-weight: 500;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-left: 10px;
+    color: #f9fd06;
+    margin-bottom: 3%;
+}
+
+
+section {
+    padding: 100px 0;
+}
+
+section .title-homenageados {
+    position: relative;
+    text-align: left;
+    font-size: 50px;
+    font-weight: 600;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    color: #f9fd06;
+}
+
+
+
+/* responsive media query start */
+@media (max-width: 1300px) {
+    .home .max-width {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 1240px) {
+
+    .navbar .menu li a {
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 1160px) {
+    .historia .historia-content .left img {
+        height: 350px;
+        width: 350px;
+    }
+
+    .max-width {
+        padding: 0 50px;
+    }
+
+
+    .services .serv-content .card {
+        width: calc(19% - 20px);
+    }
+
+    .services .serv-content .card i {
+        font-size: 40px;
+    }
+
+    .services .serv-content .card .text {
+        font-size: 20px;
+    }
+
+    .services .serv-content .card p {
+        font-size: 15px;
+    }
+
+
+}
+
+
+
+@media (max-width: 1120px) {
+
+    .contato .contato-content .contato-card .row i {
+        font-size: 50px;
+    }
+
+    .contato .contato-content .contato-card .row a {
+        font-size: 25px;
+    }
+
+    .contato .contato-content .contato-card .info .head {
+        font-size: 25px;
+    }
+
+    .contato .contato-content .contato-card .info .sub-title {
+        font-size: 25px;
+    }
+
+
+}
+
+@media (max-width: 1100px) {
+
+    .navbar .logo a {
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    .navbar .menu li a {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .max-width {
+        padding: 0 40px;
+    }
+}
+
+@media (max-width: 975px) {
+    .menu-btn {
+        display: block;
+
+    }
+
+    .menu-btn i.active::before {
+        content: "\f00d";
+    }
+
+    .navbar .menu {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        text-align: center;
+        background: rgb(0, 0, 0);
+        padding-top: 80px;
+        transition: all 0.5s ease;
+    }
+
+    .navbar .menu.active {
+        left: 0;
+    }
+
+    .navbar .menu li {
+        display: block;
+    }
+
+    .navbar .menu li a {
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+
+    .home .home-content .text-2 {
+        font-size: 55px;
+    }
+
+    .home .home-content .text-3 {
+        font-size: 45px;
+    }
+
+    .max-width {
+        max-width: 800px;
+    }
+
+    .historia .historia-content .column {
+        width: 100%;
+    }
+
+    .historia .historia-content .left {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+
+    .historia .historia-content .right {
+        flex: 100%;
+    }
+
+    .home .home-content .card {
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+
+    .services .serv-content .card {
+        width: 40%;
+        margin-bottom: 20px;
+    }
+
+    .contato .contato-content .contato-card {
+        width: 50%;
+    }
+
+}
+
+
+@media(max-width: 840px) {
+
+    .home .home-content .text-3 {
+        font-size: 30px;
+    }
+
+}
+
+@media (max-width: 690px) {
+    .max-width {
+        padding: 0 0px;
+    }
+
+
+    .services .serv-content .card {
+        width: 100%;
+    }
+
+    .contato .contato-content .contato-card {
+        margin-right: 0px;
+    }
+
+    @media (max-width: 590px) {
+
+        .contato .contato-content .contato-card {
+
+            padding: 20px 15px;
+        }
+
+
+        .contato .contato-content .contato-card .row i {
+            font-size: 40px;
+        }
+
+        .contato .contato-content .contato-card .row a {
+            font-size: 20px;
+        }
+
+        .contato .contato-content .contato-card .info .head {
+            font-size: 20px;
+        }
+
+        .contato .contato-content .contato-card .info .sub-title {
+            font-size: 20px;
+        }
+
+
+    }
+
+
+
+    @media (max-width: 500px) {
+        .max-width {
+            padding: 0 0px;
+        }
+
+        .home .home-content .text-3 {
+            font-size: 20px;
+        }
+
+        td,
+        th {
+            padding: 3px;
+            font-size: 12;
+        }
+    }
+}
